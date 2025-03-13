@@ -1,0 +1,43 @@
+<div class="dashboard-container">
+  <h2>Dashboard</h2>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <h3>Total Incidents</h3>
+      <p>{{ totalIncidents }}</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>Resolved Incidents (This Week)</h3>
+      <p>{{ resolvedIncidents }}</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>Total Problems</h3>
+      <p>{{ totalProblems }}</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>Resolved Problems (This Week)</h3>
+      <p>{{ resolvedProblems }}</p>
+    </div>
+  </div>
+
+  <h3 class="jira-heading">JIRA Tickets (This Week)</h3>
+  <table class="jira-table">
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Received</th>
+        <th>Resolved</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>JIRA Tickets</td>
+        <td>{{ jiraReceived }}</td>
+        <td>{{ jiraResolved }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
