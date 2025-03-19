@@ -1,0 +1,9 @@
+<div class="bar-chart-container">
+  <div class="bar" *ngFor="let bar of barChartData" 
+       [ngStyle]="{'height': bar.value * 10 + 'px', 'background-color': bar.color}">
+    <span>{{ bar.value }}</span>
+  </div>
+</div>
+<div class="labels">
+  <span *ngFor="let bar of barChartData">{{ bar.label }}</span>
+</div>
